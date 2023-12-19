@@ -1,0 +1,21 @@
+{
+<<<<<<< HEAD
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "server.js" }
+  ]
+=======
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ]
+>>>>>>> 3d288caab3cd26fc8a307a66f98979d8ee8f7919
+}
