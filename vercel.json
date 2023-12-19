@@ -1,21 +1,17 @@
 {
-<<<<<<< HEAD
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "api/products.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "api/users.js",
       "use": "@now/node"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
+    { "src": "/products/(.*)", "dest": "/api/products.js" },
+    { "src": "/users/(.*)", "dest": "/api/users.js" }
   ]
-=======
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
-    ]
->>>>>>> 3d288caab3cd26fc8a307a66f98979d8ee8f7919
 }
